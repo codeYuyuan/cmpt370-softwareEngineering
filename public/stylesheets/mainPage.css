@@ -1,0 +1,17 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#searchbar {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 20vh;
+}
+#companyname{
+    font-size: 250%;
+    color: #fff;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}

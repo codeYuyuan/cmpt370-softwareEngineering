@@ -1,0 +1,96 @@
+<% include partials/header%>
+<div class="ui grid container">
+
+    <div class= "eight wide column centered gird">
+        <div class="ui horizontal divider">
+            <h1>Advanced Search</h1>
+        </div>
+        <form class= "ui large form" action="/search" method="POST">
+            <div class="ui form segment">
+                <div class = "two fields">
+                    <div class="field">
+                        <label>Type</label>
+                        <div class="ui dropdown selection">
+                            <input type="hidden" name="type">
+                            <div class="default text">Select Type</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="any">Any</div>
+                                <div class="item" data-value="cat">Cat</div>
+                                <div class="item" data-value="dog">Dog</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Gender</label>
+                        <div class="ui dropdown selection">
+                            <input type="hidden" name="gender">
+                            <div class="default text">Select Gender</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="any">Any</div>
+                                <div class="item" data-value="male">Male</div>
+                                <div class="item" data-value="female">Female</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Breed</label>
+                    <div class="ui dropdown selection">
+                        <input type="hidden" name="breed">
+                        <div class="default text">Select Breed</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="husky">Husky</div>
+                            <div class="item" data-value="labrador">Labrador</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>Min Age</label>
+                        <div class="ui input">
+                            <input type="text" name="ageMin" placeholder="Minimum Age">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Max Age</label>
+                        <div class="ui input">
+                            <input type="text" name="ageMax" placeholder="Maximum Age">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Area</label>
+                    <div class="ui dropdown selection">
+                        <input type="hidden" name="area">
+                        <div class="default text">Select Area</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="any">Any</div>
+                            <div class="item" data-value="AB">Alberta</div>
+                            <div class="item" data-value="BC">British Columbia</div>
+                            <div class="item" data-value="MB">Manitoba</div>
+                            <div class="item" data-value="NB">New Brunswick</div>
+                            <div class="item" data-value="NL">Newfoundland and Labrador</div>
+                            <div class="item" data-value="NS">Nova Scotia</div>
+                            <div class="item" data-value="ON">Ontario</div>
+                            <div class="item" data-value="PE">Prince Edward Island</div>
+                            <div class="item" data-value="QC">Quebec</div>
+                            <div class="item" data-value="SK">Saskatchewan</div>
+                            <div class="item" data-value="NT">Northwest Territories</div>
+                            <div class="item" data-value="NU">Nunavut</div>
+                            <div class="item" data-value="YT">Yukon</div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+</div>
+<% include partials/footer%>
