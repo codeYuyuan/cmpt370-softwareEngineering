@@ -8,17 +8,16 @@ Make sure you have node and mysql on your computer.
 ``` 
         brew insall mysql;  
         brew services start mysql;  
-        brew install node  d
+        brew install node  
 
 ```
 #### On Linux:
 ```
-         sudo apt-get install mysql-server;  
+        sudo apt-get install mysql-server;  
         sudo apt-get install nodejs;  
 
 ```
-       
-After installation, open terminal, run:  
+#### Run application:  
 ```
         git clone https://github.com/codeYuyuan/cmpt370-softwareEngineering.git;  
         cd cmpt370-softwareEngineering  
@@ -26,7 +25,7 @@ After installation, open terminal, run:
         node app  
 
 ```
-        
-        In browser, go to  http://localhost:3000  
+
+In browser, go to  http://localhost:3000  
 
 Note: You can modify the database setting in config/database.js
